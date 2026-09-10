@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CDN >> network of servers- it caches on the broswer content closed by end-user  
+     advantages: enhance website load time -->
+    <!-- home page == display name, and ackground -->
+    <title style="font-family: 'Times New Roman', Times, serif;"> Joao Pedro Cozza - Portifolios </title>
+    <meta http-equiv="content" content="ie-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" size="60x60" href=" add link page">
+    <link rel="apple-touch-icon" size="180x180" href=" add link page">
+    <link rel="stylesheet" href="/joao_pedro_webpage/css/stylesheet-projects-page.css">
+     <link rel="stylesheet" href="/joao_pedro_webpage/css/simple-lightbox.css">
+    <link rel="stylesheet" href="/joao_pedro_webpage/css/responsive-sidebar.css" >
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+   
+    <header>
+        <div class="navbar">
+
+            <a id="logo" href="home_jp_webpage.html" target="_self">
+                    <img src="/joao_pedro_webpage/assets/logo_jpc.png" width="75" height="75"> </img>
+                </a>
+            <ul>
+                
+                <li> <a href="https://github.com/joaocozza"> GitHub </a></li>
+                <li > <a href="https://www.linkedin.com/in/joao-pedro-cozza-8b4744185">Linked In </a></li>
+                <li id="button-open-menu"> <img src="assets/menu-burger.svg" height="20" width="20" alt="horizontal-bars"></a></li>
+
+            </ul>
+            <div class="menu-onside close" id="sidemenu">
+                <li> <a href="https://github.com/joaocozza"> GitHub </a> </li>
+                <li > <a href="https://www.linkedin.com/in/joao-pedro-cozza-8b4744185">Linked In </a></li>
+                <li id="close-sidemenu"> <img src="assets/close.png" height="20" width="20" alt="x-icon"></a></li>
+            </div>
+        </div>
+    </header>
+    <main >
+        <div class="title-project-page">
+            <h1> Projects </h1>
+
+        </div>
+      
+        <div class="projects">
+            <div class="box-projects">
+                <div class="title-projects">
+                    <h1> Scanning the QR code will redirect to all the videos.</h1>
+                </div>
+                <div class="video-projects">
+                    <img src="assets/access-jp-channel.png" alt=""  >
+                </div>
+
+            </div>
+
+            
+        </div>
+        
+
+        </div>
+
+    </main>
+    <script>
+    // script for reposive design (mobile's) 
+    // find two elements (menu button + side bar)
+    // create eventhandler for menu button 
+    // change class 'menu-onside' from close to open 
+    
+    var buttonOpenMenu = document.getElementById('button-open-menu');
+    var sideMenu = document.getElementById('sidemenu');
+
+    var closeSidemenu = document.getElementById('close-sidemenu') ;
+
+    buttonOpenMenu.addEventListener("click", function() {
+        sideMenu.classList.add("open")
+        sideMenu.classList.remove("close")
+
+    
+    })
+    closeSidemenu.addEventListener("click", function() {
+        sideMenu.classList.add("close")
+        sideMenu.classList.remove('open')
+    })
+
+    </script>
+
+    <footer>
+                <div class="footer">
+                    <p > This page was built without any artificial tool </p>
+                </div>
+    </footer>
+
+</body>
+
+
+
+</html>

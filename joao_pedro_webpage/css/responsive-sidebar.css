@@ -1,0 +1,26 @@
+.menu-onside{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; /* 1vh = relative to 1% viweport's height */
+    width: 130px;
+    background-color: rgba(232, 232, 238, 0.93);
+    z-index: 99;
+    margin-top: 0;
+    list-style: none;
+     
+}
+.menu-onside.close{
+    display: none; 
+}
+.menu-onside.open{
+    display: block;
+    text-align: center;
+    
+}
+
+#menu_mobile{
+    width: auto;
+}
+
+

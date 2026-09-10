@@ -1,0 +1,167 @@
+:root {
+    --primary-color: rgba(11, 106, 231, 0.946);
+    --secondary-color: rgb(233, 226, 226);
+
+}
+
+* {
+    box-sizing: border-box;
+    /* define width by box size --- trick stablish column behavior */
+    /*box-sizing: content-box;*/
+}
+
+body {
+    background-color: var(--primary-color);
+    background-color: var();
+}
+
+.navbar {
+    border-radius: 0px 160px 0px 160px;
+    background-color: rgba(232, 232, 238, 0.93);
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.navbar img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    border-radius: 20%;
+}
+#logo {
+    margin-left: 30px;
+}
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    text-align: right;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+}
+.navbar ul li{
+    padding: 10px;
+}
+.navbar li:hover {
+    background: #9388889c;
+}
+
+/*-----------------------------------*/
+.main-body {
+    border-radius: 200px 0px 220px 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.projects {
+    background-color: hsla(228, 4%, 77%, 0.9);
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.box-projects {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-color)
+}
+
+.title-project-page {
+    color: black;
+    text-align: center;
+}
+
+.title-projects h1 {
+    text-align: center;
+    color: var(--secondary-color);
+
+}
+
+.video-projects  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.video-projects img {
+    width: 50%;
+    height: auto; 
+   
+
+    
+    /*
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    
+    z-index: 0;
+    object-fit: contain;    
+    */
+}
+.footer {
+display: flex;
+color: rgb(250, 251, 201);
+font-size: medium;
+font-weight: 500;
+width: 50%;
+margin-left: 30px;
+
+}
+#button-open-menu{
+    display: none;
+}
+
+
+/*---------------------*/
+/*----- media queries ----*/
+@media only screen and (max-width:430px) {
+
+    .navbar img {
+    
+        margin-bottom: 5%;
+    border-radius: 20%;
+    }
+ 
+    .navbar ul li{
+     display: none;
+    }
+    
+    .projects {
+        margin-right: 5%;
+        margin-left: 5%;
+        flex-direction: column;
+    }
+
+    .box-projects {
+        width: 100%;
+        
+    }
+    .video-projects img {
+    width: 100%;
+    height: auto; 
+    }
+    #button-open-menu{
+     display:block;
+     margin-right: 20px;
+    
+    }
+
+
+
+}
